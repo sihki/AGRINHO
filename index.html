@@ -1,16 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Asterium</title> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asterium é uma fornecedora de insumos relacionados ao trabalho no campo.">
-  <meta name="author" content="Vinicius Swider">
-    <link rel="stylesheet" href="style.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrinho: do campo à cidade</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8f5;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+        }
+
+        /* Menu de navegação */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Container principal */
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Imagens */
+        .img-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsividade */
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Agrinho: do campo à cidade</h1>
+        <nav>
+            <a href="#sobre-campo">O campo</a>
+            <a href="#sobre-cidade">A cidade</a>
+            <a href="#conclusao">Conclusão</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-campo">
+            <h2>O Campo</h2>
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.1&auto=format&fit=crop&w=1350&q=80" alt="Campo verde com plantações" />
+            </div>
+            <p>
+                O campo é o lar de muitas culturas, animais e tradições. É um espaço de conexão com a natureza, onde as pessoas vivem em harmonia com o meio ambiente, cultivando alimentos e preservando o modo de vida rural. As crianças aprendem a valorizar o trabalho no campo e a importância da agricultura para toda a sociedade.
+            </p>
+        </section>
+
+        <section id="sobre-cidade">
+            <h2>A Cidade</h2>
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1494526585095-c4185f1d6dfb?ixlib=rb-4.0.1&auto=format&fit=crop&w=1350&q=80" alt="Cidade moderna com prédios" />
+            </div>
+            <p>
+                A cidade é o centro de inovação, comércio e cultura. Ela oferece oportunidades, educação e lazer para seus habitantes. A vida urbana é agitada, com muitas opções de transporte, eventos e atividades. Conhecer a cidade é essencial para entender o desenvolvimento e a diversidade do nosso país.
+            </p>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>
+                Tanto o campo quanto a cidade têm seu valor e importância na formação do nosso Brasil. Conhecer e valorizar as diferenças entre esses ambientes ajuda a promover o respeito, a compreensão e o orgulho pela nossa cultura e história. O equilíbrio entre o rural e o urbano é fundamental para um futuro sustentável e justo para todos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agrinho - Do campo à cidade. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
